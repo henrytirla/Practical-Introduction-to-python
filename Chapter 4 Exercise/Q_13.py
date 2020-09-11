@@ -38,7 +38,6 @@ for game in range(5):
         print("Yay I cut up computer paper into pieces")
         wins += 1
 
-
 if wins > loose:
     print("You win ", "You Scored ",wins,"Computer Scored",loose)
 
