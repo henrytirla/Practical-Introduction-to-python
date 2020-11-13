@@ -8,7 +8,7 @@ that are less than 10000."""
 
 
 def perfectNum(x):
-  for num in range(1,x):
+  for num in range(1,x+1):
    divisors = []
    results = 0
    perfect_num=[]
@@ -23,7 +23,7 @@ def perfectNum(x):
       perfect_num.append(results)
       print("divisors",divisors,"num",num,"SumDivisors",results,"Perfect NUm",perfect_num)
 
-print(perfectNum(6))
+print(perfectNum(30))
 
 
 
