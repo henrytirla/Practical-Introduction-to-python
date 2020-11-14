@@ -19,3 +19,7 @@ while True:
 
     else:
         print("This product is not found in dictionary")
+
+
+print(my_dict)
+
