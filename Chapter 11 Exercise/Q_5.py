@@ -32,12 +32,6 @@ def teamWIn():
 
 
 
-        #return("a",team_name,percentage_win,"%")
-    #return " a) Team {} Has a wining  of {}ff{} %".format(team_name,percentage_win,team_dict)
-        # for team_winning_score in team_dict.values():
-        #     scorelist=[]
-        #     scorelist.append(value)
-        # return "Score list is {}".format(scorelist)
 
 
 print(teamWIn())
