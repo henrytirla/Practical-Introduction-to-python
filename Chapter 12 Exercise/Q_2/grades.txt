@@ -1,0 +1,5 @@
+GWashington 83 77 52
+JAdams 86 69 90
+Henry 3 77 22
+Thomas 86 69 33
+Mark 3 00 44
