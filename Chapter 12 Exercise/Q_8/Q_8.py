@@ -54,4 +54,30 @@ for matches in team2:
 
     else:
         loss = loss +1
-print(myteam,"Won: ", wins,"Matches and Lost: ",loss,"Matches")
+#print(myteam,"Won: ", wins,"Matches and Lost: ",loss,"Matches")
+
+#c)
+looser_team =[]
+for teams   in str_data:
+    if int(teams[2]) - int(teams[4]) >= 30:
+        if teams[3] not in looser_team:
+             looser_team.append(teams[3])
+
+    if int(teams[4]) - int(teams[2]) >= 30:
+        if teams[1] not in looser_team:
+             looser_team.append(teams[1])
+
+#print("Teams who lost Match with Atleast 30 or more points",looser_team)
+
+
+#d)
+winner_teams=[]
+for teams   in str_data:
+    if int(teams[4]) - int(teams[2]) >= 70:
+        #if teams[3] not in looser_team:
+           winner_teams.append(teams[3])
+#print(winner_teams)
+
+
+
+#e
