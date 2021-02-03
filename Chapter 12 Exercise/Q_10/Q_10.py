@@ -83,4 +83,41 @@ for words in str_data:
 
 #print(answer_f)
 
+#g
+count_10 = 0
+count_7 =0
+for word in str_data:
+    if len(word) == 10:
+        count_10 = count_10 + 1
+    if len(word) == 7:
+        count_7 = count_7 + 1
+
+    if count_10 > count_7:
+        pass
+        #print( "There are more 10 Letter Words")
+    else:
+        #print("There are more seven letter words",count_7)
+       pass
+
+#h
+all_lenght =[]
+for words in str_data:
+    length = len(words)
+    all_lenght.append(length)
+#print(max(all_lenght))
+    if length == 23:
+        pass
+        #print(words)
+
+#j
+for word in str_data:
+    words = list(reversed(word))
+    words = "".join(words)
+    if word == words:
+        pass
+       # print(word)
+
+#k
+
+
 
