@@ -190,3 +190,37 @@ for words in str_data:
        if words[:1] == words[-1:]:
                 #print(words)
            pass
+
+#u
+vowel_u =["a","e","i","o","u"]
+count_u = 0
+for wordsi in str_data:
+    count_u = 0
+    for vowel in vowel_u:
+
+        if vowel in wordsi:
+            count_u = count_u + 1
+            if count_u >= 9:
+               #print(wordsi)
+                pass
+#v
+
+
+
+for word in str_data:
+    if  "a" in word and "b" in word and "c" in word and "d" in word and "e" in word and "f" in word:
+         #print(word)
+         pass
+
+#w
+
+for word in str_data:
+    if word[:4] == word[4:]:
+        #print(word)
+        pass
+
+
+
+
+
+
