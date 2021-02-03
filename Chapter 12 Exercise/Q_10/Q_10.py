@@ -118,6 +118,75 @@ for word in str_data:
        # print(word)
 
 #k
+for word in str_data:
+    words = list(reversed(word))
+    words = "".join(words)
+    if words == "rat" or words == "tat":
+       #print(word)
+      pass
 
+#l
+alphabet =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+answer_l=[]
+for words in str_data:
+    for letter in alphabet:
+        if letter*2 in words and words[:-3] != "ily":
+            answer_l.append(words)
 
+#print(answer_l)
 
+#m
+for words in str_data:
+    for i in range(len(words)):
+        if words[i]=="q" and words[i+1] !="u":
+           # print(words)
+           pass
+
+##n
+for words in str_data:
+     if "zu" in words:
+        # print(words)
+        pass
+#o
+count_o =0
+answer_xx =[]
+for wordz in str_data:
+    if "ab" and "ab" in word:
+        count_o = count_o + 1
+        if count_o == 1:
+            #print(word)
+             pass
+
+#p
+
+for words in str_data:
+    if "aeiou" in words:
+        #print(words)
+        pass
+
+#q
+for words in str_data:
+    if "z" in words and "w" in words:
+        #print(words)
+        pass
+
+#r
+for words in str_data:
+    if len(words) > 5:
+        if words[:1] == "a" and words[2:3] == "e" and words[4:5] == "i":
+            #print(words)
+            pass
+
+#s
+for words in str_data:
+    if len(words) == 2:
+        #print(words)
+        pass
+
+#t
+
+for words in str_data:
+    if len(words) == 4:
+       if words[:1] == words[-1:]:
+                #print(words)
+           pass
