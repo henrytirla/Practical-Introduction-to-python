@@ -6,7 +6,7 @@ import random
 
 def generate_num(n):
 
-    random_num =random.randint(10 ** (n - 1), 10 ** n - 1)
+    random_num =random.randint(0, 10 ** n - 1)
     if random_num >100:
         print("Valid",random_num)
     else:
