@@ -1,47 +1,22 @@
-"""Write a function called verbose that, given an integer less than 1015, returns the name of
-the integer in English. As an example, verbose(123456) should return one hundred
-twenty-three thousand, four hundred fifty-six."""
+"""Our number system is called base 10 because we have ten digits: 0, 1, . . . , 9. Some cultures,
+including the Mayans and Celts, used a base 20 system. In one version of this system, the 20
+digits are represented by the letters A through T. Here is a table showing a few conversions:
+10 20 10 20 10 20 10 20
+0 A 8 I 16 Q 39 BT
+1 B 9 J 17 R 40 CA
+2 C 10 K 18 S 41 CB
+3 D 11 L 19 T 60 DA
+4 E 12 M 20 BA 399 TT
+5 F 13 N 21 BB 400 BAA
+6 G 14 O 22 BC 401 BAB
+7 H 15 P 23 BD 402 BAC
+Write a function called base20 that converts a base 10 number to base 20. It should return
+the result as a string of base 20 digits. One way to convert is to find the remainder when
+the number is divided by 20, then divide the number by 20, and repeat the process until the
+number is 0. The remainders are the base 20 digits in reverse order, though you have to
+convert them into their letter equivalents.
 
+"""
 
-
-def verbose(num):
-    d ={0:"zero",1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine",10:"ten",
-        11:"eleven",12:"twelve",13:"thirteen",14:"fourteen",15:"fiftheen",16:"sixteen",17:"seventeen",18:"eighteen",
-        19:"nineteen",20:"twenty",30:"30",40:"fourty",50:"fifthy",60:"sixty",70:"Seventy",80:"eighty",90:"Ninety"}
-
-    if num <20:
-       return d[num]
-
-    if num <100 :
-        if num % 10 == 0:
-            return d[num]
-        else:
-            return d[num //10 * 10] + verbose(num % 10)
-
-    if num < 10 **3:
-       if num % 100 == 0:
-          return d[num] + "hundred"
-       else:
-           return d[num//100] + "hundred and " + verbose(num % 100)
-
-    if num < 10 **6:
-       if num % 10**3 == 0:
-          return verbose(num) + "Thousand"
-
-       else:
-          return verbose(num//10**3)+ "Thousand " + verbose(num % 10**3)
-
-    if num < 10 ** 9:
-       if num % 10 **6 == 0:
-          return verbose(num//10**6) + "Million"
-       else:
-           return verbose(num // 10**6) + " Million " + verbose(num % 10**6)
-
-
-
-
-
-
-
-
-print(verbose(123456))
+def base20():
+    pass
