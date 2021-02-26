@@ -95,4 +95,3 @@ class War(Standard_deck):
 deck = War()
 deck.play()
 
-#reference https://github.com/monkeybuzinis/Python/blob/master/14.object-oriented/7.py
