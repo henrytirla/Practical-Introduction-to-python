@@ -22,7 +22,7 @@ def Gcd():
               x = remainder
 
 
-        elif y>x:
+        else:
             remainder = y % x
             if remainder ==0:
                 return "The GCD is",x
