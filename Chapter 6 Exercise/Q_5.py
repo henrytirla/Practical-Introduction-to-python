@@ -9,6 +9,6 @@ Q*ert!!!"""
 
 string = input("Enter a String: ")
 
-new_string = string.replace(string[1],"*")
+new_string = string[0]+"*"+string [2:]
 
 print(new_string + "!!!")
