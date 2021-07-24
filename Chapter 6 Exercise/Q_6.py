@@ -1,5 +1,2 @@
 
-
-help([int])
-
-help(type(self))
+## TODO
