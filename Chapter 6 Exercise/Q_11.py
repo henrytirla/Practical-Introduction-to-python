@@ -15,4 +15,4 @@ for letters in range(len(input_string)):
     if input_string[letters] == "a":
         print(input_string[:letters+1])
         print(input_string[letters+1:])
-#eg Buffalo
+#eg Buffalo, binance
