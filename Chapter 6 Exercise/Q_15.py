@@ -20,3 +20,11 @@ class!
 
 
 """
+
+name = input(" What is your name: ")
+country= input("Where are you from: ")
+dream= input("What is your dream? ")
+user_story = "Dear {name} , you are a great programmer. Always remember practice makes progress, you are from {country} a beautiful country, Believe in yourself and your will achieve your dream to be a {dream}".format(name=name,country=country,dream=dream)
+
+
+print(user_story)
