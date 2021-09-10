@@ -16,3 +16,5 @@ for letters in range(len(input_string)):
         print(input_string[:letters+1])
         print(input_string[letters+1:])
 #eg Buffalo, binance
+
+
