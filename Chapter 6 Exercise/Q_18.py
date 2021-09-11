@@ -13,3 +13,42 @@ a letter and prints out the index of the first occurrence of the letter in the s
 letter is not in the string, the program should say so
 """
 
+
+#a
+
+# string_input = input("Enter String: ")
+# letter_input = input("Enter Character: ")
+#
+#
+# index = 0
+#
+# while index < len(string_input):
+#     if string_input[index] == letter_input:
+#         print(True)
+#         break
+#     else:
+#         index+=1
+# print("No match found")
+
+#b
+
+string_input = input("Enter String: ")
+letter_input = input("Enter Character: ")
+
+
+index = 0
+count = 0
+while index < len(string_input):
+    if string_input[index] == letter_input:
+        print(True)
+        index += 1
+        count+=1
+
+
+    else:
+        index+=1
+print(f"Number occures {count} number of times")
+
+
+
+#c edit solution a to have answer to c
