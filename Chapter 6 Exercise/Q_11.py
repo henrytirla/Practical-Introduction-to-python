@@ -18,3 +18,22 @@ for letters in range(len(input_string)):
 #eg Buffalo, binance
 
 
+def SortArray(arr):
+    output_array = []
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            pass
+        if arr[i] > arr[j]:
+                temp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = temp
+
+                x = arr[i] ** 2
+                output_array.append(x)
+        else:
+                x = arr[i] ** 2
+                output_array.append(x)
+
+    return output_array
+
+print(SortArray([3,2,1]))
