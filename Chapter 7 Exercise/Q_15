@@ -1,0 +1,56 @@
+#chapter 7 Q15A 
+import random
+kt=''
+msg = (input('Enter the your secret message: '))
+msg=msg.lower()
+random.seed(1)
+#to generate the same random numbers when
+#using randint so as to run your test with the same numbers
+shifts=[]
+for i in range (len(msg)):    
+    x=(random.randint(1,26))
+    shifts.append(x)
+print(shifts)
+code=[]
+# To re-arrage the alphabet starting from the index 
+#of the random integers for every alpha in the message
+alphabet='abcdefghijklmnopqrstuvwxyz'
+for i in range(len(shifts)):
+   x=(alphabet[shifts[i]:]+alphabet[:shifts[i]])
+   code.append(x)
+for i in range(len(code)):    
+    key = code[i]#converts  an element in a list to a string
+    secret_message = msg[i]
+    secret_message = secret_message.lower()
+    for c in secret_message:
+        if c.isalpha():        
+            v=(key[alphabet.index(c)])
+            kt=kt+v
+            print(v,end='')
+        else:
+            kt=kt+c
+            print(c, end='')
+
+#Q15B
+#TO REVERSE IT
+msg=kt
+random.seed(1)
+l=[]
+for i in range (len(msg)):    
+    x=(random.randint(1,26))
+    l.append(x)
+code=[]
+s='abcdefghijklmnopqrstuvwxyz'
+for i in range(len(l)):
+   x=(s[l[i]:]+s[:l[i]])
+   code.append(x)
+for i in range(len(code)):    
+    alphabet = s
+    key = code[i]#converts  an element in a list to a string 
+    secret_message = msg[i]
+    secret_message = secret_message.lower()
+    for c in secret_message:
+        if c.isalpha():        
+            print(alphabet[key.index(c)],end='')#switch key and alphabet to decrypt 
+        else:
+            print(c, end='')  
