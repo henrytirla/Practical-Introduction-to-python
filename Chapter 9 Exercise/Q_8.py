@@ -8,33 +8,18 @@ the remainder.
 • Repeat this process until the smaller number is 0. The GCD is the last value of the larger
 number."""
 
-def Gcd():
-    x=int(input("Enter First Number: "))
-    y = int(input("Enter Second Number: "))
-    while x or y != 0:
-        if x>y :
-            remainder = x % y
-            if remainder== 0:
-                return "The GCD is",y
-                break
-
-            else:
-              x = remainder
-
-
-        else:
-            remainder = y % x
-            if remainder ==0:
-                return "The GCD is",x
-                break
-            else:
-                y = remainder
-
-
-
-
-print(Gcd())
-
+nums=[eval(input (f'Enter number {i}: ')) for i in range (1,3) ]
+larger=max(nums)
+smaller=min(nums)
+remainder=larger%smaller
+if remainder==0:
+    print('The GCD is:',smaller)
+while remainder!=0:
+    remainder=larger%smaller
+    if remainder==0:
+        print ('The GCD is:',smaller)
+    larger=smaller
+    smaller=remainder
 
 
 
