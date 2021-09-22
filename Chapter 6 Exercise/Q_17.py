@@ -9,10 +9,6 @@ yzabcdefghijklmnopqrstuvwx
 zabcdefghijklmnopqrstuvwxy
 """
 
-alphabet="abcdefghijklmnopqrstuvwxyz"
-
-for m in range (26):
-    for j in range (26):
-        print(alphabet[(m+j)%26],end='')
-    print()
-
+alpha ='abcdefghijklmnopqrstuvwxyz'
+for i in range(1,len(alpha),1):
+   print(alpha[i:]+alpha[:i], sep='')
