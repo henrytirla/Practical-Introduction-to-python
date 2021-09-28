@@ -4,4 +4,4 @@ below."""
 
 num = eval(input("Enter a Number: "))
 
-print("The square of 5 is " ,num*num )
+print("The square of",num,"is",num*num,".",sep=" ")
