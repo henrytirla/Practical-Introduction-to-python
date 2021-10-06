@@ -5,3 +5,10 @@ beyond our reach until Chapter 12.
 Instead, write a program that asks the user for a string
 and returns a random anagram of the string—in other words, a random rearrangement of the
 letters of that string."""
+
+from random import shuffle
+word = input('Enter a word: ')
+new_word = list(word)
+shuffle(new_word)
+new_word_2 = ''.join(new_word)
+print(new_word_2)
