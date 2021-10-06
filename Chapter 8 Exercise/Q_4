@@ -1,0 +1,83 @@
+print('Problem 4a\n')
+from random import shuffle
+
+def validate_sent(sent):
+    valid = False
+    while not valid:
+        valid_sent = input(sent)
+        try:
+            L = valid_sent.split(' ')
+            count = 0
+            for i in range(len(L)):
+                count += 1
+            if count >= 2:
+                valid = True
+            else:
+                print('\nYou did not give a sentence. Please, enter a sentence.')
+        except:
+            pass
+    return L
+
+def get_rand_sent(sent_lst):
+    M = []
+    shuffle(sent_lst)
+    for i in sent_lst:
+        M.append(i)
+    N = ' '.join(M)
+    return N
+
+def main():
+    print('Printing out Your Sentecne Randomly.')
+    sent = 'Enter a sentence: '
+    sent_lst = validate_sent(sent)
+    rand_sent = get_rand_sent(sent_lst)
+    print(rand_sent)
+
+if __name__ == '__main__':
+    main()
+
+print('Problem 4b\n')
+from random import shuffle
+from string import punctuation
+
+def validate_sent(sent):
+    valid = False
+    while not valid:
+        valid_sent = input(sent)
+        try:
+            L = valid_sent.split(' ')
+            count = 0
+            for i in range(len(L)):
+                count += 1
+            if count >= 2:
+                valid = True
+            else:
+                print('\nYou did not give a sentence. Please, enter a sentence.')
+        except:
+            pass
+    return L
+
+def get_rand_sent(sent_lst):
+    M = []
+    shuffle(sent_lst)
+    for i in sent_lst:
+        M.append(i)
+    N = ' '.join(M)
+    return N
+
+def clean_rand_sent(rand_sent):
+    rand_sent_lower = rand_sent.lower()
+    for i in punctuation:
+        rand_sent_lower = rand_sent_lower.replace(i, '').capitalize()
+    return rand_sent_lower
+
+def main():
+    print('Printing out Your Sentecne Randomly with right Capitalization and Period.')
+    sent = 'Enter a sentence: '
+    sent_lst = validate_sent(sent)
+    rand_sent = get_rand_sent(sent_lst)
+    new_rand_sent = clean_rand_sent(rand_sent)
+    print(new_rand_sent, '.')
+
+if __name__ == '__main__':
+    main()
