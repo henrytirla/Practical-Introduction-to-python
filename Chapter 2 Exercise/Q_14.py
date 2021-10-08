@@ -9,14 +9,13 @@ diamond should be.
 ***
 * """
 
+n = eval(input("Enter a number to specify how high you want your triangle: "))
+for i in range(n):
+    print(" "*(n-i)+" *"*(i+1))
 
-# n=eval(input("Enter a number to specify how high you want your triangle: "))
-n=17
-for rows in range (n):
-    for columns in range(0,n-rows-1):
-      print(end="")
-    for columns in range(0,rows+1):
-        print("*", end="")
+for j in range(n-1):
+    print(" "*(j+2)+" *"*(n-1-j))
+    
 
-    print()
+
 
