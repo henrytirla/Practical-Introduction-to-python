@@ -1,3 +1,8 @@
+"""
+Write a simple quote-of-the-day program. The program should contain a list of quotes, and
+when the user runs the program, a randomly selected quote should be printed.
+"""
+
 from sys import exit
 from random import choices
 from enum import Enum
