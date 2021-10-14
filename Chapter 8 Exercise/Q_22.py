@@ -1,3 +1,10 @@
+"""
+The following is useful as part of a program to play Battleship. Suppose you have a 5 × 5 list
+that consists of zeroes and ones. Ask the user to enter a row and a column. If the entry in the
+list at that row and column is a one, the program should print Hit and otherwise it should
+print Miss.
+"""
+
 from random import randint
 from pprint import pprint
 
