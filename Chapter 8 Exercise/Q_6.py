@@ -1,3 +1,8 @@
+"""
+Write a simple lottery drawing program. The lottery drawing should consist of six different
+numbers between 1 and 48.
+"""
+
 from enum import Enum
 from time import sleep
 from sys import exit
