@@ -1,3 +1,7 @@
+"""
+Write a program that finds the average of all of the entries in a 4 × 4 list of integers.
+"""
+
 from pprint import pprint
 import numpy as np
 
