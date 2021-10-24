@@ -2,6 +2,7 @@
 that many times."""
 
 from random import randint
+x=input("Enter your Name:")
 n = randint(1,10)
 for i in range(n):
-    print("Henry Tirla")
+    print(x)
