@@ -10,7 +10,33 @@ that the period is in the right place.
 """
 
 from random import shuffle
-user_sentence = input("Enter a sentence:  ")
+from string import punctuation
+#user_sentence = input("Enter a sentence:  ")
+user_sentence = "I am a crypto billionaire ."
+#eg I am a crypto billionaire .
+#a
 L =user_sentence.split()
 shuffle(L)
+
 print(L)
+
+
+#b
+
+punct =""
+sentence2=""
+if user_sentence[-1] in punctuation:
+    punct = user_sentence[-1]
+    sentence2 = user_sentence[0].lower() + user_sentence[1:-1]
+
+
+
+#print(sentence2)
+l2= sentence2.split()
+
+shuffle(l2)
+sentence2 = ' '.join(l2) + punct
+sentence2 = sentence2[0].upper() + sentence2[1:]
+print(sentence2)
+
+#b credit to https://github.com/Yaachaka/  for the solution of b
