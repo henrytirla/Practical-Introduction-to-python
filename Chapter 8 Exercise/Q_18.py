@@ -1,5 +1,14 @@
+"""
+Write a program that creates a 10×10 list of random integers between 1 and 100. Then do the
+following:
+(a) Print the list.
+(b) Find the largest value in the third row.
+(c) Find the smallest value in the sixth column.
+"""
+
 import numpy as np
 from pprint import pprint
+
 array = np.random.randint(1, 101, size = (10, 10))
 pprint(array)
 print('')
