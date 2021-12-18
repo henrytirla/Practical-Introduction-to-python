@@ -1,3 +1,10 @@
+"""
+Write a censoring program. Allow the user to enter some text and your program should print
+out the text with all the curse words starred out. The number of stars should match the length
+of the curse word. For the purposes of this program, just use the“curse” words darn, dang,
+freakin, heck, and shoot.
+"""
+
 from enum import Enum
 
 class curses(Enum):
